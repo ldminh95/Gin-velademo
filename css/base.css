@@ -1,0 +1,53 @@
+:root {
+    --gin-font: 14px;
+    --color-primary: #ba933e;
+    --body-bg: #fff;
+    --text-color-primary: #444444;
+    --text-color-second: #1a1a1a;
+    --text-color-banner: #666666;
+    --topbar-bg-color: #f5f5f5;
+    --font-icon: 'FontAwesome';
+}
+body {
+    box-sizing: border-box;
+    font-family: var(--f-red-hat);
+    font-size: var(--gin-font);
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color-primary);
+}
+a {
+    font-size: calc(var(--gin-font) + 2px);
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.box_flex {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.col-m3 {
+    width: 33.3333%;
+}
+
+/* ================================ */
+/* Gin core */
+/* ================================ */
+
+
+/* margin */
+.mr10 {
+    margin: 0 10px;
+}
+.pd15 {
+    padding: 0 15px;
+}

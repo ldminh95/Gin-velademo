@@ -1,0 +1,84 @@
+@import url(googleFont.css);
+@import url(base.css);
+.Overview {
+  margin: 0 auto; }
+
+.headerTop {
+  width: 100%;
+  background: var(--topbar-bg-color);
+  padding: 10px 0; }
+  .headerTop_box-Left .fas {
+    margin-right: 8px; }
+  .headerTop_box-Center {
+    text-align: center; }
+    .headerTop_box-Center .bg_primary {
+      background-color: var(--color-primary);
+      color: #fff;
+      padding: 0 8px;
+      border-radius: 3px;
+      margin-left: 10px;
+      font-size: var(--gin-font);
+      display: inline-block; }
+      .headerTop_box-Center .bg_primary:hover {
+        background: #947531; }
+  .headerTop_box-Right {
+    justify-content: flex-end; }
+    .headerTop_box-Right .gin-currency {
+      position: relative;
+      cursor: pointer; }
+      .headerTop_box-Right .gin-currency-dropdown {
+        position: absolute;
+        display: none; }
+        .headerTop_box-Right .gin-currency-dropdown .currency-item {
+          padding: 5px 0; }
+          .headerTop_box-Right .gin-currency-dropdown .currency-item.active {
+            color: var(--color-primary); }
+          .headerTop_box-Right .gin-currency-dropdown .currency-item:hover {
+            color: var(--color-primary);
+            cursor: pointer; }
+      .headerTop_box-Right .gin-currency i {
+        margin-left: 5px; }
+      .headerTop_box-Right .gin-currency:hover .gin-currency-dropdown {
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        background-color: #fff;
+        padding: 5px 20px;
+        top: 100%;
+        font-size: calc(var(--gin-font) + 2px);
+        right: 0;
+        box-shadow: 0 6px 12px #0000002d; }
+    .headerTop_box-Right .gin-link a {
+      margin-left: 15px;
+      color: var(--text-color-banner); }
+      .headerTop_box-Right .gin-link a:hover {
+        color: var(--color-primary); }
+
+.headerMenu {
+  padding: 20px 0; }
+  .headerMenu .header_Center li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: max-content;
+    color: var(--text-color-second); }
+    .headerMenu .header_Center li a i {
+      margin-left: 5px; }
+  .headerMenu .header_Center li.active a {
+    color: var(--color-primary); }
+  .headerMenu .header_Right {
+    justify-content: flex-end; }
+    .headerMenu .header_Right-account {
+      padding-right: 15px;
+      border-right: 1px solid var(--text-color-primary); }
+    .headerMenu .header_Right-search {
+      margin-left: 25px; }
+    .headerMenu .header_Right-cart {
+      margin-left: 25px; }
+    .headerMenu .header_Right i {
+      font-size: calc(var(--gin-font) + 6px); }
+    .headerMenu .header_Right a {
+      color: var(--text-color-second); }
+    .headerMenu .header_Right li {
+      display: inline-block; }
+    .headerMenu .header_Right ul {
+      margin-left: 10px; }

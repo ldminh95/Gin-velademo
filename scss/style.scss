@@ -1,0 +1,131 @@
+@import "googleFont.css";
+@import "base.css";
+
+.Overview {
+    margin: 0 auto;
+}
+
+.headerTop {
+    width: 100%;
+    background: var(--topbar-bg-color);
+    padding: 10px 0;
+    &_box {
+        &-Left {
+            .fas {
+                margin-right: 8px;
+            }
+        }
+        &-Center {
+            text-align: center;
+            .bg_primary {
+                background-color: var(--color-primary);
+                color: #fff;
+                padding: 0 8px;
+                border-radius: 3px;
+                margin-left: 10px;
+                font-size: var(--gin-font);
+                display: inline-block;
+                &:hover {
+                    background: #947531;
+                }
+            }
+        }
+        &-Right {
+            justify-content: flex-end;
+            .gin {
+                &-currency {
+                    position: relative;
+                    cursor: pointer;
+                    &-dropdown {
+                        position: absolute;
+                        display: none;
+                        .currency-item {
+                            padding: 5px 0;
+                            &.active {
+                                color: var(--color-primary);
+                            }
+                            &:hover {
+                                color: var(--color-primary);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    i {
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        .gin-currency-dropdown {
+                            display: block;
+                            border: 1px solid rgba(0,0,0,0.15);
+                            border-radius: 3px;
+                            background-color: #fff;
+                            padding: 5px 20px;
+                            top: 100%;
+                            font-size: calc(var(--gin-font) + 2px);
+                            right: 0;
+                            box-shadow: 0 6px 12px #0000002d;
+                        }
+                    }
+                }
+                &-link {
+                    a {
+                        margin-left: 15px;
+                        color: var(--text-color-banner);
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.headerMenu {
+    padding: 20px 0;
+    .header {
+        &_Center {
+            li {
+                a {
+                    padding: 15px 20px;
+                    display: inline-block;
+                    width: max-content;
+                    color: var(--text-color-second);
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+                &.active {
+                    a {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+        &_Right {
+            justify-content: flex-end;
+            &-account {
+                padding-right: 15px;
+                border-right: 1px solid var(--text-color-primary);
+            }
+            &-search {
+                margin-left: 25px;
+            }
+            &-cart {
+                margin-left: 25px;
+            }
+            i {
+                font-size: calc(var(--gin-font) + 6px);
+            }
+            a {
+                color: var(--text-color-second);
+            }
+            li {
+                display: inline-block;
+            }
+            ul {
+                margin-left: 10px;
+            }
+        }
+    }
+}

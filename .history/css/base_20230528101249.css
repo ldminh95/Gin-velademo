@@ -25,13 +25,12 @@ a {
 li {
     list-style-type: none;
 }
-h2,ul {
+ul {
     padding: 0;
     margin: 0;
 }
 img {
     max-width: 100%;
-    display: block;
 }
 .box_flex {
     display: -webkit-flex;

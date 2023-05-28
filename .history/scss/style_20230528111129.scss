@@ -185,24 +185,6 @@
                     p {
                         font-size: calc(var(--gin-font) + 8px);
                         font-weight: 700;
-                        margin-bottom: 0.68em;
-                        span {
-                            color: var(--color-primary);
-                        }
-                    }
-                    h2 {
-                        font-size: calc(var(--gin-font) + 44px);
-                        line-height: 1em;
-                        margin-bottom: 5px;
-                    }
-                    a {
-                        padding: 14px 20px;
-                        background-color: var(--text-color-second);
-                        color: var(--body-bg);
-                        margin-top: 30px;
-                        border-radius: 4px;
-                        display: inline-block;
-                        letter-spacing: .5px;
                     }
                }
             }

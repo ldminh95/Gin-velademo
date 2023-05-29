@@ -107,6 +107,14 @@
     .headerMenu .header_Right ul {
       margin-left: 10px; }
 
+.MainContent .gin_slideshow {
+  position: relative;
+  overflow: hidden; }
+  .MainContent .gin_slideshow:hover .slide_button-prev {
+    left: 10px; }
+  .MainContent .gin_slideshow:hover .slide_button-next {
+    right: 10px; }
+
 .MainContent .slide_item {
   position: relative; }
   .MainContent .slide_item .wrapper {
@@ -141,3 +149,54 @@
         border-radius: 4px;
         display: inline-block;
         letter-spacing: .5px; }
+
+.MainContent .slide_button button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--gin-border-main);
+  border-radius: 50%;
+  background: var(--body-bg);
+  font-size: 22px;
+  transition: all .35s ease;
+  cursor: pointer; }
+
+.MainContent .slide_button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -80px; }
+
+.MainContent .slide_button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -80px; }
+
+.MainContent .slide_dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  text-align: center; }
+  .MainContent .slide_dots ul {
+    display: block;
+    text-align: center; }
+    .MainContent .slide_dots ul li {
+      display: inline-block;
+      margin: 0 6px;
+      padding: 2px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      border-radius: 50%; }
+      .MainContent .slide_dots ul li button {
+        width: 10px;
+        height: 10px;
+        border: 0;
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        display: block; }
+      .MainContent .slide_dots ul li.active {
+        border: 2px solid var(--color-primary); }
+        .MainContent .slide_dots ul li.active button {
+          background: var(--body-bg); }

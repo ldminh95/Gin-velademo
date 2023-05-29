@@ -165,6 +165,22 @@
 }
 
 .MainContent {
+    .gin_slideshow {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            .slide {
+                &_button {
+                    &-prev {
+                        left: 10px;
+                    }
+                    &-next {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
     .slide {
         &_item {
             position: relative;
@@ -205,6 +221,64 @@
                         letter-spacing: .5px;
                     }
                }
+            }
+        }
+        &_button {
+            button {
+                width: 45px;
+                height: 45px;
+                border: 1px solid var(--gin-border-main);
+                border-radius: 50%;
+                background: var(--body-bg);
+                font-size: 22px;
+                transition: all .35s ease;
+                cursor: pointer;
+            }
+            &-prev {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -80px;
+            }
+            &-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -80px;
+            }
+        }
+        &_dots {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            text-align: center;
+            ul {
+                display: block;
+                text-align: center;
+                li {
+                    display: inline-block;  
+                    margin: 0 6px;   
+                    padding: 2px; 
+                    border: 2px solid transparent;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    button {
+                        width: 10px;
+                        height: 10px;
+                        border: 0;
+                        background-color: var(--color-primary);
+                        border-radius: 50%;
+                        display: block;
+                    }
+                    &.active {
+                        border: 2px solid var(--color-primary); 
+                        button {
+                            background: var(--body-bg);
+                        }
+                    }
+                }
             }
         }
     }
